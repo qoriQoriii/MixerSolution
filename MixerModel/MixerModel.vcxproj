@@ -119,11 +119,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Otros archivos\Model\actuadores.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\administador.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\cliente.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\componente.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\mixer.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\motor.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\pago.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\pantalla.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\pedido.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\sensor.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\tanque.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\Usuario.h" />
+    <ClInclude Include="..\..\Otros archivos\Model\valvula.h" />
     <ClInclude Include="MixerModel.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Otros archivos\Model\actuadores.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\administador.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\cliente.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\componente.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\mixer.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\motor.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\pago.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\pantalla.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\pedido.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\sensor.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\tanque.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\Usuario.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Model\valvula.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="MixerModel.cpp" />
     <ClCompile Include="pch.cpp">
