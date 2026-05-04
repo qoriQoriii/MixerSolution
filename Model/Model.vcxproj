@@ -120,45 +120,45 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.h" />
-    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.h" />
+    <ClInclude Include="Actuadores.h" />
+    <ClInclude Include="Administrador.h" />
+    <ClInclude Include="Bebida.h" />
+    <ClInclude Include="Cliente.h" />
+    <ClInclude Include="Componente.h" />
+    <ClInclude Include="Insumo.h" />
+    <ClInclude Include="Mixer.h" />
     <ClInclude Include="Model.h" />
+    <ClInclude Include="Motor.h" />
     <ClInclude Include="pch.h" />
+    <ClInclude Include="Pedido.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="Sensor.h" />
+    <ClInclude Include="Tanque.h" />
+    <ClInclude Include="Usuario.h" />
+    <ClInclude Include="Valvula.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.cpp" />
-    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.cpp" />
+    <ClCompile Include="Actuadores.cpp" />
+    <ClCompile Include="Administrador.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Bebida.cpp" />
+    <ClCompile Include="Cliente.cpp" />
+    <ClCompile Include="Componente.cpp" />
+    <ClCompile Include="Insumo.cpp" />
+    <ClCompile Include="Mixer.cpp" />
     <ClCompile Include="Model.cpp" />
+    <ClCompile Include="Motor.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="Pedido.cpp" />
+    <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="Tanque.cpp" />
+    <ClCompile Include="Usuario.cpp" />
+    <ClCompile Include="Valvula.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="app.rc" />
