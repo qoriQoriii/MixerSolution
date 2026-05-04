@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="MixerModel.h">
+    <ClInclude Include="Model.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="Resource.h">
@@ -24,48 +24,48 @@
     <ClInclude Include="pch.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\actuadores.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\administador.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\cliente.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\componente.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\mixer.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\motor.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\pago.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\pantalla.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\pedido.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\sensor.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\tanque.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\Usuario.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Otros archivos\Model\valvula.h">
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="MixerModel.cpp">
+    <ClCompile Include="Model.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
     <ClCompile Include="AssemblyInfo.cpp">

@@ -20,38 +20,39 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{FC2C2739-EF0E-053C-32C7-7C8EA5C54421}</ProjectGuid>
+    <ProjectGuid>{30C04796-38C1-5553-A373-7BEF0A5CDEBA}</ProjectGuid>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>MixerModel</RootNamespace>
+    <RootNamespace>Model</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Model</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -83,9 +84,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
-      <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -122,26 +120,39 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\Otros archivos\Model\actuadores.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\administador.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\cliente.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\componente.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\mixer.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\motor.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\pago.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\pantalla.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\pedido.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\sensor.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\tanque.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\Usuario.h" />
-    <ClInclude Include="..\..\Otros archivos\Model\valvula.h" />
-    <ClInclude Include="MixerModel.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.h" />
+    <ClInclude Include="Model.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="MixerModel.cpp" />
+    <ClCompile Include="Model.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
