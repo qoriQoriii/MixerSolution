@@ -19,37 +19,37 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <VCProjectVersion>17.0</VCProjectVersion>
-    <ProjectGuid>{45781045-5A12-7D7B-3C55-9CCB593BF635}</ProjectGuid>
-    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <VCProjectVersion>18.0</VCProjectVersion>
+    <ProjectGuid>{13A3E606-CEC7-8279-14A3-1B32473E3C76}</ProjectGuid>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <Keyword>ManagedCProj</Keyword>
-    <RootNamespace>Controller</RootNamespace>
+    <RootNamespace>View</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <PlatformToolset>v145</PlatformToolset>
     <CLRSupport>true</CLRSupport>
@@ -84,8 +84,7 @@
     <Link>
       <AdditionalDependencies />
       <SubSystem>Windows</SubSystem>
-      <EntryPointSymbol>
-      </EntryPointSymbol>
+      <EntryPointSymbol>main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
@@ -97,6 +96,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -108,6 +108,7 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -119,35 +120,37 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies />
+      <SubSystem>Console</SubSystem>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="Controller.h" />
-    <ClInclude Include="HadwareController.h" />
-    <ClInclude Include="InventarioController.h" />
-    <ClInclude Include="MixerController.h" />
-    <ClInclude Include="PedidoController.h" />
-    <ClInclude Include="pch.h" />
-    <ClInclude Include="Resource.h" />
-    <ClInclude Include="UsuarioController.h" />
+    <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Admin.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Client.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MyForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Admin.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
-    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="Client.cpp" />
+    <ClCompile Include="MyForm.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="HadwareController.cpp" />
-    <ClCompile Include="InventarioController.cpp" />
-    <ClCompile Include="MixerController.cpp" />
-    <ClCompile Include="PedidoController.cpp" />
-    <ClCompile Include="UsuarioController.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ResourceCompile Include="app.rc" />
+    <ClCompile Include="View.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -155,12 +158,20 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Model\Model.vcxproj">
-      <Project>{30c04796-38c1-5553-a373-7bef0a5cdeba}</Project>
-    </ProjectReference>
+    <EmbeddedResource Include="Admin.resx">
+      <DependentUpon>Admin.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client.resx">
+      <DependentUpon>Client.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyForm.resx">
+      <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
