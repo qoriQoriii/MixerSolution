@@ -25,6 +25,7 @@
     <Keyword>ManagedCProj</Keyword>
     <RootNamespace>Model</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Model</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -119,11 +120,37 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.h" />
+    <ClInclude Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Actuadores.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Administrador.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Bebida.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Cliente.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Componente.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Insumo.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Mixer.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Motor.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Pedido.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Sensor.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Tanque.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Usuario.cpp" />
+    <ClCompile Include="..\..\Otros archivos\Nueva carpeta\Model\Valvula.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="pch.cpp">

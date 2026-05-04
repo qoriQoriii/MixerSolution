@@ -2,7 +2,7 @@
 
 using namespace System;
 
-namespace Model {
+namespace ModelMixer {
 	public ref class Class1
 	{
 		// TODO: Agregue aquí los métodos de esta clase.
