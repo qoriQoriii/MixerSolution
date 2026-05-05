@@ -2,8 +2,7 @@
 #ifndef _INVENTARIOCONTROLLER_H
 #define _INVENTARIOCONTROLLER_H
 
-#include "Insumo.h"
-#include "Bebida.h"
+
 
 using namespace ModelMixer;
 using namespace System;

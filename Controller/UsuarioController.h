@@ -2,9 +2,6 @@
 #ifndef _USUARIOCONTROLLER_H
 #define _USUARIOCONTROLLER_H
 
-#include "Usuario.h"
-#include "Administrador.h"
-#include "Cliente.h"
 
 using namespace ModelMixer;
 using namespace System;

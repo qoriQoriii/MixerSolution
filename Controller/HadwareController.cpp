@@ -1,5 +1,9 @@
 #include "pch.h"
-#include "HardwareController.h"
+#include "HadwareController.h"
+
+
+using namespace System;
+using namespace ModelMixer;
 
 void ControllerMixer::HardwareController::Initialize() {
     // Aquí se instanciarían los motores, válvulas y sensores físicos de la máquina

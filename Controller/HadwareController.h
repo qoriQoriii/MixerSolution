@@ -2,11 +2,7 @@
 #ifndef _HARDWARECONTROLLER_H
 #define _HARDWARECONTROLLER_H
 
-#include "Componente.h"
-#include "Motor.h"
-#include "Valvula.h"
-#include "Sensor.h"
-#include "Tanque.h"
+
 
 using namespace ModelMixer;
 using namespace System;

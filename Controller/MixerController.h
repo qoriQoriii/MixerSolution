@@ -1,7 +1,7 @@
 #ifndef _MIXERCONTROLLER_H
 #define _MIXERCONTROLLER_H
 
-#include "Mixer.h"
+
 
 using namespace ModelMixer;
 using namespace System;

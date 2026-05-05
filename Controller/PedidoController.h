@@ -1,7 +1,7 @@
 #ifndef _PEDIDOCONTROLLER_H
 #define _PEDIDOCONTROLLER_H
 
-#include "Pedido.h"
+
 
 using namespace ModelMixer;
 using namespace System;
