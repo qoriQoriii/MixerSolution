@@ -4,12 +4,13 @@
 
 namespace ModelMixer {
     public ref class Administrador : public Usuario {
-    private:
-        String^ contrasena;
     public:
-        Administrador(int id, String^ nombre, int edad, String^ dni, String^ nombreYApellido, String^ contrasena);
+        property String^ contrasena;
+    public:
+        Administrador(int id, String^ nombre,  int dni, String^ contrasena);
 
-        property String^ Contrasena{ String ^ get() { return contrasena; } void set(String ^ value) { contrasena = value; } }
+      
+      
     };
 }
 #endif

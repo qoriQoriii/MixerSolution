@@ -45,7 +45,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v145</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CLRSupport>true</CLRSupport>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -126,6 +126,7 @@
     <ClInclude Include="Cliente.h" />
     <ClInclude Include="Componente.h" />
     <ClInclude Include="Insumo.h" />
+    <ClInclude Include="InsumoBebida.h" />
     <ClInclude Include="Mixer.h" />
     <ClInclude Include="Model.h" />
     <ClInclude Include="Motor.h" />
@@ -145,6 +146,7 @@
     <ClCompile Include="Cliente.cpp" />
     <ClCompile Include="Componente.cpp" />
     <ClCompile Include="Insumo.cpp" />
+    <ClCompile Include="InsumoBebida.cpp" />
     <ClCompile Include="Mixer.cpp" />
     <ClCompile Include="Model.cpp" />
     <ClCompile Include="Motor.cpp" />
