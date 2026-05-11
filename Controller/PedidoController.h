@@ -9,11 +9,11 @@ using namespace System::Collections::Generic;
 
 namespace ControllerMixer {
     public ref class PedidoController {
+    private:
+        static List<Pedido^>^ listaPedidos = gcnew List<Pedido^>();
     public:
-        static List<Pedido^>^ pedidos = gcnew List<Pedido^>();
-
         static void Create(String^ datos, double precio);
-        static List<Pedido^>^ ReadAll();
+        static List<Pedido^>^ GetAllPedidos();
         static void ClearHistory();
     };
 }

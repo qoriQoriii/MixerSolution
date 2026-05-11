@@ -217,7 +217,7 @@
 											"top": 560,
 											"width": 119,
 											"height": 13,
-											"text": "+dni",
+											"text": "+id: int",
 											"horizontalAlignment": 0
 										},
 										{
@@ -235,7 +235,25 @@
 											"top": 575,
 											"width": 119,
 											"height": 13,
-											"text": "+nombre y apellido",
+											"text": "+nombre: string",
+											"horizontalAlignment": 0
+										},
+										{
+											"_type": "UMLAttributeView",
+											"_id": "AAAAAAGeF/2sUq90yV0=",
+											"_parent": {
+												"$ref": "AAAAAAGdrVfM4HwvXbM="
+											},
+											"model": {
+												"$ref": "AAAAAAGeF/2sTa9xB/Q="
+											},
+											"font": "Arial;13;0",
+											"parentStyle": true,
+											"left": 1389,
+											"top": 590,
+											"width": 119,
+											"height": 13,
+											"text": "+dni: int",
 											"horizontalAlignment": 0
 										}
 									],
@@ -244,7 +262,7 @@
 									"left": 1384,
 									"top": 553,
 									"width": 129,
-									"height": 40
+									"height": 55
 								},
 								{
 									"_type": "UMLOperationCompartmentView",
@@ -268,7 +286,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 1389,
-											"top": 598,
+											"top": 613,
 											"width": 119,
 											"height": 13,
 											"text": "+mandar a pago()",
@@ -286,7 +304,7 @@
 											"font": "Arial;13;0",
 											"parentStyle": true,
 											"left": 1389,
-											"top": 613,
+											"top": 628,
 											"width": 119,
 											"height": 13,
 											"text": "+perdir dni()",
@@ -296,7 +314,7 @@
 									"font": "Arial;13;0",
 									"parentStyle": true,
 									"left": 1384,
-									"top": 593,
+									"top": 608,
 									"width": 129,
 									"height": 38
 								},
@@ -6625,8 +6643,8 @@
 							"_parent": {
 								"$ref": "AAAAAAGdrVfM33wn9B0="
 							},
-							"name": "dni",
-							"type": ""
+							"name": "id",
+							"type": "int"
 						},
 						{
 							"_type": "UMLAttribute",
@@ -6634,8 +6652,17 @@
 							"_parent": {
 								"$ref": "AAAAAAGdrVfM33wn9B0="
 							},
-							"name": "nombre y apellido",
-							"type": ""
+							"name": "nombre",
+							"type": "string"
+						},
+						{
+							"_type": "UMLAttribute",
+							"_id": "AAAAAAGeF/2sTa9xB/Q=",
+							"_parent": {
+								"$ref": "AAAAAAGdrVfM33wn9B0="
+							},
+							"name": "dni",
+							"type": "int"
 						}
 					],
 					"operations": [

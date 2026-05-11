@@ -10,29 +10,34 @@ void ControllerMixer::HardwareController::Initialize() {
 }
 
 void ControllerMixer::HardwareController::AddMotor(int id, String^ nom, String^ est, double torque) {
-    dispositivos->Add(gcnew Motor(id, nom, est, torque));
+    listaDispositivos->Add(gcnew Motor(id, nom, est, torque));
 }
 
 void ControllerMixer::HardwareController::AddValvula(int id, String^ nom, String^ est, double flujo, double tiempo) {
-    dispositivos->Add(gcnew Valvula(id, nom, est, flujo, tiempo));
+    listaDispositivos->Add(gcnew Valvula(id, nom, est, flujo, tiempo));
 }
 
 void ControllerMixer::HardwareController::AddSensor(int id, String^ nom, String^ est, double litrado) {
-    dispositivos->Add(gcnew Sensor(id, nom, est, litrado));
+    listaDispositivos->Add(gcnew Sensor(id, nom, est, litrado));
 }
 
 void ControllerMixer::HardwareController::AddTanque(int id, String^ nom, String^ est, Insumo^ ins, double nivel) {
-    dispositivos->Add(gcnew Tanque(id, nom, est, ins, nivel));
+    listaDispositivos->Add(gcnew Tanque(id, nom, est, ins, nivel));
 }
 
 Componente^ ControllerMixer::HardwareController::GetById(int id) {
-    for (int i = 0; i < dispositivos->Count; i++) {
-        if (dispositivos[i]->Id == id) return dispositivos[i];
+    for (int i = 0; i < listaDispositivos->Count; i++) {
+        if (listaDispositivos[i]->id == id) return listaDispositivos[i];
     }
     return nullptr;
 }
 
 void ControllerMixer::HardwareController::UpdateEstado(int id, String^ nuevoEstado) {
     Componente^ comp = GetById(id);
-    if (comp != nullptr) comp->Estado = nuevoEstado;
+    if (comp != nullptr) comp->estado = nuevoEstado;
+}
+
+List<Componente^>^ ControllerMixer::HardwareController::GetAllDispositivos()
+{
+    return listaDispositivos;
 }

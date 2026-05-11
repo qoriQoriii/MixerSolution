@@ -9,13 +9,16 @@ using namespace System::Collections::Generic;
 
 namespace ControllerMixer {
     public ref class MixerController {
+    private:
+        static List<Mixer^>^ listaMixers = gcnew List<Mixer^>();
     public:
-        static List<Mixer^>^ mixers = gcnew List<Mixer^>();
-
         static void Initialize();
-        static void CreateMixer(int id, String^ ubi, String^ est, LinkedList<Bebida^>^ cat, LinkedList<Pedido^>^ ped, LinkedList<Tanque^>^ mat);
+        static void CreateMixer(int id, String^ ubi, String^ est, List<Bebida^>^ cat, List<Pedido^>^ ped, List<Tanque^>^ mat);
         static Mixer^ GetMixer(int id);
         static void UpdateStatus(int id, String^ status);
+        static List<Mixer^>^ GetAllMixers();
+
+
     };
 }
 #endif

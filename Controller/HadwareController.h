@@ -10,9 +10,9 @@ using namespace System::Collections::Generic;
 
 namespace ControllerMixer {
     public ref class HardwareController {
+    private:
+        static List<Componente^>^ listaDispositivos = gcnew List<Componente^>();
     public:
-        static List<Componente^>^ dispositivos = gcnew List<Componente^>();
-
         static void Initialize();
 
         // Métodos de fábrica para crear cada tipo
@@ -23,6 +23,9 @@ namespace ControllerMixer {
 
         static Componente^ GetById(int id);
         static void UpdateEstado(int id, String^ nuevoEstado);
+
+        static List<Componente^>^ GetAllDispositivos();
+
     };
 }
 #endif

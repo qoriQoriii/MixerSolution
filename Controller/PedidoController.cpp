@@ -2,13 +2,13 @@
 #include "PedidoController.h"
 
 void ControllerMixer::PedidoController::Create(String^ datos, double precio) {
-    pedidos->Add(gcnew Pedido(datos, precio));
+    listaPedidos->Add(gcnew Pedido(datos, precio));
 }
 
-List<Pedido^>^ ControllerMixer::PedidoController::ReadAll() {
-    return pedidos;
+List<Pedido^>^ ControllerMixer::PedidoController::GetAllPedidos() {
+    return listaPedidos;
 }
 
 void ControllerMixer::PedidoController::ClearHistory() {
-    pedidos->Clear();
+    listaPedidos->Clear();
 }
