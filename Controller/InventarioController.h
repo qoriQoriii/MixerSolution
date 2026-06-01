@@ -31,12 +31,13 @@ namespace ControllerMixer {
         //persistencias xd
 
         static void Guardar() {
-            PersistanceMixer::PersistanceManager::GuardarInsumos(insumos);
-            PersistanceMixer::PersistanceManager::GuardarBebidas(catalogo);
+            PersistenciaMixer::PersistenciaManager::GuardarInsumos(listaInsumos);
+            PersistenciaMixer::PersistenciaManager::GuardarBebidas(catalogo);
         }
         static void Cargar() {
-            insumos = PersistanceMixer::PersistanceManager::CargarInsumos();
-
+           
+                listaInsumos = PersistenciaMixer::PersistenciaManager::CargarInsumos();
+        }
     };
 }
 #endif

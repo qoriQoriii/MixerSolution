@@ -22,10 +22,10 @@ namespace ControllerMixer {
 
         //persistencias
         static void Guardar() {
-            PersistenciaMixer::PersistenciaManager::GuardarPedidos(pedidos);
+            PersistenciaMixer::PersistenciaManager::GuardarPedidos(listaPedidos);
         }
         static void Cargar() {
-            pedidos = PersistenciaMixer::PersistenciaManager::CargarPedidos();
+            listaPedidos = PersistenciaMixer::PersistenciaManager::CargarPedidos();
         }
 
     };

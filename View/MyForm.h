@@ -11,10 +11,7 @@ namespace View {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	using namespace UsuarioController;
-	using namespace InventarioController;
-	using namespace PedidoController;
-	using namespace MixerController;
+	using namespace ControllerMixer;
 
 
 	/// <summary>

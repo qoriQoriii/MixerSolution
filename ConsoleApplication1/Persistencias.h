@@ -103,8 +103,10 @@ namespace PersistenciaMixer {
 
 				// Textoo
 				StreamWriter^ swTxt = gcnew StreamWriter("usuarios.txt");
-				for each (Usuario ^ u in lista)
-					swTxt->WriteLine(u->IdUsuario + "|" + u->Nombre + "|" + u->Edad + "|" + u->Dni + "|" + u->NombreYApellido);
+				for each (Usuario^ u in lista)
+
+
+					swTxt->WriteLine(u->idUsuario + "|" + u->nombre + "|" + u->dni);
 				swTxt->Close();
 			}
 			catch (Exception^) {}
@@ -123,8 +125,8 @@ namespace PersistenciaMixer {
 				swXml->Close();
 
 				StreamWriter^ swTxt = gcnew StreamWriter("insumos.txt");
-				for each (Insumo ^ i in lista)
-					swTxt->WriteLine(i->Id + "|" + i->Nombre + "|" + i->StockActual + "|" + i->StockMinimoAlerta);
+				for each (Insumo^ i in lista)
+					swTxt->WriteLine(i->id + "|" + i->nombre);
 				swTxt->Close();
 			}
 			catch (Exception^) {}
@@ -144,7 +146,7 @@ namespace PersistenciaMixer {
 
 				StreamWriter^ swTxt = gcnew StreamWriter("bebidas.txt");
 				for each (Bebida ^ b in lista)
-					swTxt->WriteLine(b->Id + "|" + b->Nombre + "|" + b->Precio);
+					swTxt->WriteLine(b->id + "|" + b->nombre + "|" + b->precio);
 				swTxt->Close();
 			}
 			catch (Exception^) {}
@@ -164,7 +166,7 @@ namespace PersistenciaMixer {
 
 				StreamWriter^ swTxt = gcnew StreamWriter("pedidos.txt");
 				for each (Pedido ^ p in lista)
-					swTxt->WriteLine(p->DatosDelCliente + "|" + p->Precio);
+					swTxt->WriteLine(p->datosDelCliente + "|" + p->precio);
 				swTxt->Close();
 			}
 			catch (Exception^) {}
@@ -184,7 +186,7 @@ namespace PersistenciaMixer {
 
 				StreamWriter^ swTxt = gcnew StreamWriter("mixers.txt");
 				for each (Mixer ^ m in lista)
-					swTxt->WriteLine(m->Id + "|" + m->Ubicacion + "|" + m->Estado);
+					swTxt->WriteLine(m->id + "|" + m->ubicacion + "|" + m->estado);
 				swTxt->Close();
 			}
 			catch (Exception^) {}

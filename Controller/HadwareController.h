@@ -11,7 +11,7 @@ using namespace System::Collections::Generic;
 
 namespace ControllerMixer {
     public ref class HardwareController {
-    private:
+    private:  
         static List<Componente^>^ listaDispositivos = gcnew List<Componente^>();
     public:
         static void Initialize();

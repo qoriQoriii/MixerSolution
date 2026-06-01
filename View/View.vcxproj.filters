@@ -60,5 +60,8 @@
     <Image Include="app.ico">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="..\imagenes\bar.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

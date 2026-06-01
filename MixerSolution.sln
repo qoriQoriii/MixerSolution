@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
-VisualStudioVersion = 18.4.11626.88
+VisualStudioVersion = 18.5.11801.241 oobstable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Model", "Model\Model.vcxproj", "{30C04796-38C1-5553-A373-7BEF0A5CDEBA}"
 EndProject
@@ -10,6 +10,14 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "View", "View\View.vcxproj", "{13A3E606-CEC7-8279-14A3-1B32473E3C76}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Persistencia", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{A009AD0E-93B8-5FD9-F645-F4697BC4ACDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{30C04796-38C1-5553-A373-7BEF0A5CDEBA} = {30C04796-38C1-5553-A373-7BEF0A5CDEBA}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{BF6804E6-B878-464A-97A9-ECCAED4117E5}"
+	ProjectSection(SolutionItems) = preProject
+		imagenes\bar.png = imagenes\bar.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,8 +35,8 @@ Global
 		{30C04796-38C1-5553-A373-7BEF0A5CDEBA}.Release|x64.Build.0 = Release|x64
 		{30C04796-38C1-5553-A373-7BEF0A5CDEBA}.Release|x86.ActiveCfg = Release|Win32
 		{30C04796-38C1-5553-A373-7BEF0A5CDEBA}.Release|x86.Build.0 = Release|Win32
-		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Debug|x64.ActiveCfg = Debug|Win32
-		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Debug|x64.Build.0 = Debug|Win32
+		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Debug|x64.ActiveCfg = Debug|x64
+		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Debug|x64.Build.0 = Debug|x64
 		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Debug|x86.ActiveCfg = Debug|Win32
 		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Debug|x86.Build.0 = Debug|Win32
 		{45781045-5A12-7D7B-3C55-9CCB593BF635}.Release|x64.ActiveCfg = Release|x64

@@ -22,10 +22,10 @@ namespace ControllerMixer {
         ///persi
 
         static void Guardar() {
-            PersistenciaMixer::PersistenciaManager::GuardarMixers(mixers);
+            PersistenciaMixer::PersistenciaManager::GuardarMixers(listaMixers);
         }
         static void Cargar() {
-            mixers = PersistenciaMixer::PersistenciaManager::CargarMixers()
+            listaMixers = PersistenciaMixer::PersistenciaManager::CargarMixers();
         }
 
     };

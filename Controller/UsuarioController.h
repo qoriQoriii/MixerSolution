@@ -30,10 +30,10 @@ namespace ControllerMixer {
 
         //persistencias
         static void Guardar() {
-            PersistenciaMixer::PersistenciaManager::GuardarUsuarios(usuarios);
+            PersistenciaMixer::PersistenciaManager::GuardarUsuarios(listaUsuarios);
         }
         static void Cargar() {
-            usuarios = PersistenciaMixer::PersistenciaManager::CargarUsuarios();
+           listaUsuarios = PersistenciaMixer::PersistenciaManager::CargarUsuarios();
         }
     };
 }
