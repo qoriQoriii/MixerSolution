@@ -7,6 +7,7 @@ using namespace System;
 using namespace System::Collections::Generic;
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Mixer {
     public:
         property int id;

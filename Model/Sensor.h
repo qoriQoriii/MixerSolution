@@ -3,6 +3,7 @@
 #include "Componente.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Sensor : public Componente {
     public:
         property double litrado;

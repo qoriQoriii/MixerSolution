@@ -3,6 +3,7 @@
 #include "Usuario.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Cliente : public Usuario {
     public:
         property int edadCliente;

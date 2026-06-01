@@ -5,6 +5,7 @@
 
 
 using namespace ModelMixer;
+using namespace PersistenciaMixer;
 using namespace System;
 using namespace System::Collections::Generic;
 
@@ -26,6 +27,16 @@ namespace ControllerMixer {
         static Bebida^ ReadBebida(int id);
         static void DeleteBebida(int id);
         static  List<Bebida^>^ GetAllBebidas();
+
+        //persistencias xd
+
+        static void Guardar() {
+            PersistanceMixer::PersistanceManager::GuardarInsumos(insumos);
+            PersistanceMixer::PersistanceManager::GuardarBebidas(catalogo);
+        }
+        static void Cargar() {
+            insumos = PersistanceMixer::PersistanceManager::CargarInsumos();
+
     };
 }
 #endif

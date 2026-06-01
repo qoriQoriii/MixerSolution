@@ -4,6 +4,7 @@
 #include "Insumo.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Tanque : public Componente {
     public:
         property Insumo^ insumo;

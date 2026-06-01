@@ -3,6 +3,7 @@
 #include "Usuario.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Administrador : public Usuario {
     public:
         property String^ contrasena;

@@ -3,6 +3,7 @@
 #include "Actuadores.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Valvula : public Actuadores {
     public:
         property double flujo;

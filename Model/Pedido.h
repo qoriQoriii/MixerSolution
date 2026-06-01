@@ -3,6 +3,7 @@
 using namespace System;
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Pedido {
     public:
         property String^ datosDelCliente;

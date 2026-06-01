@@ -9,6 +9,7 @@
 using namespace System;
 
 namespace ModelMixer {
+    [Serializable]
     public ref class InsumoBebida {
     public:
         property int id;

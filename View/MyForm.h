@@ -11,6 +11,11 @@ namespace View {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace UsuarioController;
+	using namespace InventarioController;
+	using namespace PedidoController;
+	using namespace MixerController;
+
 
 	/// <summary>
 	/// Summary for MyForm
@@ -23,6 +28,12 @@ namespace View {
 			InitializeComponent();
 			this->BackgroundImage = Image::FromFile(Application::StartupPath + "\\bar.png");
 			this->BackgroundImageLayout = ImageLayout::Stretch;
+
+			ControllerMixer::UsuarioController::Cargar();
+			ControllerMixer::InventarioController::Cargar();
+			ControllerMixer::PedidoController::Cargar();
+			ControllerMixer::MixerController::Cargar();
+			
 		}
 
 	protected:
@@ -30,7 +41,17 @@ namespace View {
 		/// Clean up any resources being used.
 		/// </summary>
 		~MyForm()
+
 		{
+
+			ControllerMixer::UsuarioController::Guardar();
+			ControllerMixer::InventarioController::Guardar();
+			ControllerMixer::PedidoController::Guardar();
+			ControllerMixer::MixerController::Guardar();
+
+
+
+
 			if (components)
 			{
 				delete components;

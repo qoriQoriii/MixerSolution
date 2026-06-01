@@ -7,7 +7,7 @@
 using namespace System;
 using namespace System::Collections::Generic;
 using namespace ModelMixer;
-
+using namespace PersistenciaMixer;
 
 namespace ControllerMixer {
     public ref class UsuarioController {
@@ -25,6 +25,16 @@ namespace ControllerMixer {
         static void Delete(int dni);
 
         static List<Usuario^>^ GetAllUsers();
+
+
+
+        //persistencias
+        static void Guardar() {
+            PersistenciaMixer::PersistenciaManager::GuardarUsuarios(usuarios);
+        }
+        static void Cargar() {
+            usuarios = PersistenciaMixer::PersistenciaManager::CargarUsuarios();
+        }
     };
 }
 #endif

@@ -5,6 +5,7 @@
 
 
 using namespace ModelMixer;
+using namespace PersistenciaMixer;
 using namespace System;
 using namespace System::Collections::Generic;
 

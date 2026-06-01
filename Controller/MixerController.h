@@ -4,6 +4,7 @@
 
 
 using namespace ModelMixer;
+using namespace PersistenciaMixer;
 using namespace System;
 using namespace System::Collections::Generic;
 
@@ -18,6 +19,14 @@ namespace ControllerMixer {
         static void UpdateStatus(int id, String^ status);
         static List<Mixer^>^ GetAllMixers();
 
+        ///persi
+
+        static void Guardar() {
+            PersistenciaMixer::PersistenciaManager::GuardarMixers(mixers);
+        }
+        static void Cargar() {
+            mixers = PersistenciaMixer::PersistenciaManager::CargarMixers()
+        }
 
     };
 }

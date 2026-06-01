@@ -3,6 +3,7 @@
 #include "Componente.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Actuadores : public Componente {
     public:
         Actuadores(int id, String^ nombre, String^ estado);

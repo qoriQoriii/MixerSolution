@@ -5,6 +5,7 @@
 using namespace System;
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Insumo : public InsumoBebida{
     public:
         property int stockActual;

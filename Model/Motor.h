@@ -3,6 +3,7 @@
 #include "Actuadores.h"
 
 namespace ModelMixer {
+    [Serializable]
     public ref class Motor : public Actuadores {
     public:
         property double torque;
